@@ -1,0 +1,6 @@
+FROM node
+WORKDIR /developer/nodejs
+COPY . .
+RUN npm ci
+EXPOSE 3000
+CMD [ "npm" , "start" ] 
